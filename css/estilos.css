@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: rgb(68,68,68);
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a {
+    color: #ff1616;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff1616;
+    text-decoration: underline;
+}
+
+cite {
+    font-family: Georgia, Times, serif;
+}
+
+figure {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+figure .img-fluid {
+    margin-bottom: 0;
+}
+
+figure.hero {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 0.7rem;
+    padding-top: 15px;
+    text-align: right;
+}
+
+iframe {
+    border: 0;
+}
+
+/*Clase para esconder un elemento que será visible únicamente a los lectores de pantalla */
+
+.sr {
+    position:absolute;
+    height:1px;    
+    width:1px;    
+    overflow:hidden;    
+    clip:rect(1px, 1px, 1px, 1px);
+}
+
+/*Clases aplicadas a las imágenes y vídeos del sitio*/
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.video-fluid {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-fluid-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-fluid::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+/*Contenedores del sitio*/
+
+header.header {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+footer.footer {
+    padding-top: 30px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main > .container, footer > .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+
+/*Menú de navegación */
+
+nav {
+    padding-top:5px;
+}
+
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1rem; 
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 3px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    font-style: italic;
+    font-weight: 700; 
+}
+
+nav a:hover {
+    text-decoration: none; 
+}
+
+/*Pie de las páginas*/
+
+footer.footer p {
+    font-size: 0.9rem;
+}
+
+/*Estilos para la página index.html */
+
+.meta {
+    font-size: 1.4rem;
+}
+
+.meta ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+article p {
+    text-align: justify;
+}
+
+article p.credits {
+    font-size: 0.8rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+article ul {
+    margin-left: 50px;
+    list-style-type: square;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+article footer {
+    padding-top: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article footer img {
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article footer p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+article footer p span.author {
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+
+/*Estilos para la página tipos-de-robots.html*/
+blockquote {
+    width: 95%;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 15px 30px;
+    background-color: #eee;
+    border-left: 4px solid #ff1616;
+}
+blockquote p {
+    font-size: 1.3rem;
+    font-family: Georgia, Times, serif;
+}
+
+blockquote cite {
+    font-size: 1.2rem;
+}
+
+ul.niuades {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 570px;
+    list-style-type: square;
+}
+
+ul.niuades li {
+    font-size: 1.1rem;
+    list-style-image: url(../img/icon-robot.png);
+    margin-left: 30px;
+}
+
+ul.niuades li li {
+    margin-left: 50px;
+    list-style-image: none;
+    list-style-type: square;
+}
+
+ul.niuades li li li {
+    margin-left: 50px;
+    list-style-type: disc;
+}
+
+.copy {
+    font-size: 0.7rem;
+    padding-top: 0; 
+}
+
+
+/*Estilos para la página "robots-de-ficcion.html*/
+
+dt {
+  font-size: 2rem;
+}
+
+dd {
+    padding-left: 0;
+}
+
+dd p {
+    text-align: justify;
+}
+
+dd p:last-child {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
